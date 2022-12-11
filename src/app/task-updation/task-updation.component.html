@@ -1,0 +1,47 @@
+<app-emp-nav-bar></app-emp-nav-bar>
+
+<h3>update task</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>employee name</th>
+                                <th>task name</th>
+                                <th>task status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody *ngFor="let i of searchData">
+                            <tr>
+                                <td>{{i.empId}}</td>
+                                <td>{{i.taskName}}</td>
+                                <td>{{i.taskStatus}}</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Task  to update</label>
+                    <input name="taskName" [(ngModel)]="taskName" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">new task status</label>
+                    <textarea name="taskStatus" [(ngModel)]="taskStatus" id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="UpdateStatus()" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

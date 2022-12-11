@@ -1,0 +1,36 @@
+<app-emp-nav-bar></app-emp-nav-bar>
+
+<h3>my tasks</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>emp ID</th>
+                                <th>task Name</th>
+                                <th>task Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody *ngFor="let i of searchData">
+                            <tr>
+                                <td>{{i.empId}}</td>
+                                <td>{{i.taskName}}</td>
+                                <td>{{i.taskStatus}}</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

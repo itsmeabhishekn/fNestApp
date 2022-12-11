@@ -1,0 +1,26 @@
+
+<h4>Admin Login</h4>
+<div></div>
+<div class="container">
+    <div class="row g-3 mt-5">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Username</label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="adminLoginCheck()" class="btn btn-success">sign in</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <a routerLink="/employeeLogin">Employee Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
